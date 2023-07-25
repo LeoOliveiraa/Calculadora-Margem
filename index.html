@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cabeçalho">
+        <h1>CALCULADORA DE MARGEM</h1>
+    </div>
+
+
+    <div class="container">
+        <div class="formulario">
+
+        <p class="subtitle">Coloque aqui suas rendas, de acordo com o holerith</p>
+        <input class="renda" id="renda1" name="renda1" type='number' placeholder="Digite seu salário bruto">
+        <input class="renda" id="renda2" name="renda2" type="number" placeholder="Digite o valor do quinquênio">
+        <input class="renda" id="renda3" name="renda3" type="number" placeholder="Digite mais uma fonte de valor válida!">
+
+        <p class="subtitle">Agora coloque aqui seus descontos, como INSS e IRRF</p>
+        <input class="renda" id="desconto1" name="desconto1" type="number" placeholder="INSS">
+        <input class="renda" id="desconto2" name="desconto2" type="number" placeholder="IRRF">
+        <button class="btn-calcular">Calcular Margem</button>
+        </div>
+    </div>
+    <div class="use-modal">
+        <button class="btnOpenModal" onclick="openModal()">Como usar?</button>
+    </div>
+    <div class="modal-container">
+        <div class="modal">
+            <h2>Como Utilizar?</h2>
+            <hr />
+            <span>
+                Para utilizar o sistema, visualize o seu holerith. Na seção de adicionar as rendas,
+                 coloque todo tipo de renda fixa (vencimentos, quinquênios, ações judiciais etc...) <strong>NÃO</strong> adicione rendas variáveis, como horas extras, insalubridade ou qualquer outra eventual.
+                Já na parte de descontos, coloque tudo aquilo que é descontado todo mês (Previdência, IRRF ou Outros), <strong>NÃO</strong> adicione descontos eventuais como faltas.<br>
+                <strong>NÃO</strong> adicione nenhuma parcela de algum emprestimo existente.
+            </span>
+            <hr />
+            <div class="btns">
+                <button class="btnOK" onclick="CloseModal()">Ok</button>
+                <button class="btnClose" onclick="CloseModal()">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="footer">
+        <div class="footer">
+            <h2>&copy; Desenvolvido por Leonardo Oliveira</h2>
+        </div>
+    </section>
+   
+
+    <script src="./static/script.js"></script>
+    <script src="./scriptmodal/modal.js"></script>
+</body>
+</html>
